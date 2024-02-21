@@ -26,7 +26,7 @@ proteins = ["PF13411.1", "PF12728.1", "PF01381.2", "PF00205.2", "PF10875.1", "PF
 # In[4]:
 
 
-count_unique_proteins(proteins)(proteins)
+count_unique_proteins(proteins)
 
 
 # In[5]:
