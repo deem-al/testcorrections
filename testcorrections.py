@@ -12,7 +12,7 @@
 
 #DONE
 #Q1
-def protein_list(proteins):
+def count_unique_proteins(proteins):
     return len(set(proteins))
 
 
@@ -26,7 +26,7 @@ proteins = ["PF13411.1", "PF12728.1", "PF01381.2", "PF00205.2", "PF10875.1", "PF
 # In[4]:
 
 
-protein_list(proteins)
+count_unique_proteins(proteins)(proteins)
 
 
 # In[5]:
@@ -52,7 +52,7 @@ protein_dict(proteins)
 
 #DONE
 #Q3
-def combo_dict(dict1, dict2):
+def merge_protein_counts(dict1, dict2):
     
     single_dict = {}
     
@@ -84,7 +84,7 @@ proteins2 = {'PF13411.1': 2,
 # In[9]:
 
 
-combo_dict(proteins1, proteins2)
+merge_protein_counts(proteins1, proteins2)
 
 
 # In[10]:
@@ -98,7 +98,7 @@ combo_dict(proteins1, proteins2)
 
 #DONE
 #Q1
-def iso_format(dates):
+def dates_to_iso8601(dates):
     
     iso_dates = []
     
@@ -122,7 +122,7 @@ def iso_format(dates):
 
 
 dates = ["February 6, 1992", "February 18, 1992", "February 27, 1992"]
-iso_format(dates)
+dates_to_iso8601(dates)
 
 
 # In[32]:
@@ -131,7 +131,7 @@ iso_format(dates)
 #DONE
 #Q2
 
-def sorted_dates(iso_dates):
+def sort_dates(iso_dates):
     
     separate = iso_dates.split('-')
     
@@ -142,6 +142,6 @@ def sorted_dates(iso_dates):
 
 
 to_order = ['1992-02-6', '1992-02-18', '1992-02-27']
-ordered = sorted(to_order, key = sorted_dates)
+ordered = sorted(to_order, key = sort_dates)
 ordered 
 
