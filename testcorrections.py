@@ -34,7 +34,7 @@ count_unique_proteins(proteins)
 
 #DONE
 #Q2
-def protein_dict(proteins):
+def count_proteins(proteins):
     dict1 = {}
     for protein in proteins:
         dict1[protein] = dict1.get(protein,0)+1
@@ -44,7 +44,7 @@ def protein_dict(proteins):
 # In[6]:
 
 
-protein_dict(proteins)
+count_proteins(proteins)
 
 
 # In[7]:
